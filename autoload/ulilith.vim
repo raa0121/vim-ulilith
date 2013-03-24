@@ -9,7 +9,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-let V = vital#of('ulilith')
+let V = vital#of('vim-ulilith')
 let P = V.import('Process')
 
 if has('win32') || has('win64')
