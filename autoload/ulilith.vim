@@ -9,10 +9,13 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
+let V = vital#of('ulilith')
+let P = V.import('Process')
+
 if has('win32') || has('win64')
   let s:path = expand('<sfile>:p:h') . '/ulilith.js'
   function! s:request_to_ulilith(request)
-    if unite#util#has_vimproc()
+    if P.has_vimproc()
       call vimproc#system_bg("cscript.exe " . substitute(s:path, '\\', '/', 'g') . ' ' . a:request)
     else
       call system("cscript " . substitute(s:path, '/', '\\', 'g') . ' ' . a:request)

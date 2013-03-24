@@ -1,4 +1,4 @@
-*vim-ulilith.txt*                                  Control the uLilith from Vim
+*ulilith.txt*                                   Control the uLilith from Vim
 
 Version : 0.1
 Author  : raa0121 <raa0121@gmail.com>
