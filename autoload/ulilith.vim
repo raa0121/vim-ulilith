@@ -12,12 +12,12 @@ endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-let V = vital#of('vim-ulilith')
-let P = V.import('Process')
+let s:V = vital#of('vim-ulilith')
+let s:P = s:V.import('Process')
 
 let s:path = expand('<sfile>:p:h') . '/ulilith.js'
 function! s:request_to_ulilith(request)
-  if P.has_vimproc()
+  if s:P.has_vimproc()
     call vimproc#system_bg("cscript.exe " . substitute(s:path, '\\', '/', 'g') . ' ' . a:request)
   else
     call system("cscript " . substitute(s:path, '/', '\\', 'g') . ' ' . a:request)
