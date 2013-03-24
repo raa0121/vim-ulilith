@@ -35,7 +35,7 @@ ulilith#prev()                                                  *ulilith#prev()*
 ulilith#repeat()                                              *ulilith#repeat()*
     Set the ulilith to repeat only current track.
 
-ulilith#looop()                                                 *ulilith#loop()*
+ulilith#loop()                                                 *ulilith#loop()*
     Set the ulilith to repeat all track in the current playlist.
 
 ulilith#stop()                                                  *ulilith#stop()*
