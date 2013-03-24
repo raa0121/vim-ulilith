@@ -1,51 +1,51 @@
-*ulilith.txt*                                   Control the uLilith from Vim
+*ulilith.txt*	Control the uLilith from Vim
 
 Version : 0.1
 Author  : raa0121 <raa0121@gmail.com>
 
-CONTENTS                                                 *vim-ulilith-contents*
+CONTENTS					*vim-ulilith-contents*
 
-Introduction    |vim-ulilith-introduction|
-Interface       |vim-ulilith-interface|
-    Functions   |vim-ulilith-functions|
+Introduction					|vim-ulilith-introduction|
+Interface					|vim-ulilith-interface|
+  Functions					|vim-ulilith-functions|
 
 ==============================================================================
-INTRODUCTION                                         *vim-ulilith-introduction*
+INTRODUCTION					*vim-ulilith-introduction*
 
 *vim-ulilith* is a vim plugin to control the uLilith from Vim.
 
 ==============================================================================
-INTERfACE                                               *vim-ulilith-interface*
+INTERFACE					*vim-ulilith-interface*
 
 ------------------------------------------------------------------------------
-FUNCTIONS                                               *vim-ulilith-functions*
+FUNCTIONS					*vim-ulilith-functions*
 
-ulilith#play()                                                  *ulilith#play()*
-    Play the current track.
+ulilith#play()					*ulilith#play()*
+	Play the current track.
 
-ulilith#pause()                                                *ulilith#pause()*
-    Toggle between pausing and playing.
+ulilith#pause()					*ulilith#pause()*
+	Toggle between pausing and playing.
 
-ulilith#next()                                                  *ulilith#next()*
-    Advanced to the next track in the current playlist.
+ulilith#next()					*ulilith#next()*
+	Advanced to the next track in the current playlist.
 
-ulilith#prev()                                                  *ulilith#prev()*
-    Return to the previous track in the current playlist.
+ulilith#prev()					*ulilith#prev()*
+	Return to the previous track in the current playlist.
 
-ulilith#repeat()                                              *ulilith#repeat()*
-    Set the ulilith to repeat only current track.
+ulilith#repeat()				*ulilith#repeat()*
+	Set the ulilith to repeat only current track.
 
-ulilith#looop()                                                 *ulilith#loop()*
-    Set the ulilith to repeat all track in the current playlist.
+ulilith#loop()					*ulilith#loop()*
+	Set the ulilith to repeat all track in the current playlist.
 
-ulilith#stop()                                                  *ulilith#stop()*
-    Stop to playing the current track.
+ulilith#stop()					*ulilith#stop()*
+	Stop to playing the current track.
 
-ulilith#volume_up({value})                                      *ulilith#volume_up()*
-    Volume up {value}.
+ulilith#volume_up({value})			*ulilith#volume_up()*
+	Volume up {value}.
 
-ulilith#volume_down({value})                                    *ulilith#volume_down()*
-    Volume down {value}.
+ulilith#volume_down({value})			*ulilith#volume_down()*
+	Volume down {value}.
 
 ==============================================================================
 vim:tw=78:ft=help
