@@ -15,7 +15,7 @@ INTRODUCTION                                         *vim-ulilith-introduction*
 *vim-ulilith* is a vim plugin to control the uLilith from Vim.
 
 ==============================================================================
-INTERfACE                                               *vim-ulilith-interface*
+INTERFACE                                               *vim-ulilith-interface*
 
 ------------------------------------------------------------------------------
 FUNCTIONS                                               *vim-ulilith-functions*
