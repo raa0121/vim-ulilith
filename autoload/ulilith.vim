@@ -6,7 +6,7 @@
 " Version: 0.1
 "=============================================================================
 
-if !has('win32') && !has('win64')
+if !has('win32') && !has('win64') && !has('win32unix')
   finish
 endif
 let s:save_cpo = &cpo
@@ -16,9 +16,17 @@ let s:V = vital#of('vim-ulilith')
 let s:P = s:V.import('Process')
 
 let s:path = expand('<sfile>:p:h') . '/ulilith.js'
-function! s:request_to_ulilith(request)
+if has('win32unix') 
   if s:P.has_vimproc()
-    call vimproc#system_bg("cscript.exe " . substitute(s:path, '\\', '/', 'g') . ' ' . a:request)
+    let s:path = vimproc#system("cygpath.exe -w " . s:path)
+  else
+    let s:path = system("cygpath -w" . s:path)
+  endif
+endif
+
+function! s:request_to_ulilith(request) 
+  if s:P.has_vimproc()
+    call vimproc#system("cscript.exe " . substitute(s:path, '\\', '/', 'g') . ' ' . a:request)
   else
     call system("cscript " . substitute(s:path, '/', '\\', 'g') . ' ' . a:request)
   endif
